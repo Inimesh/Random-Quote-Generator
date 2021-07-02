@@ -1,11 +1,93 @@
-body {
-  margin: 0;
+* {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  margin: 0;
+  padding: 0;
 }
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#background {
+    display: flex;
+    font-weight: 400;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#quote-box {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    position: relative;
+    width: 450px;
+    padding: 20px 25px;
+
+}
+
+#text {
+    text-align: center;
+    width: 450px;
+}
+
+#author {
+    text-align: right;
+    font-weight: 400;
+    padding: 10px;
+}
+
+.buttons {
+    width: 450px;
+    margin: auto;
+    display: block;
+}
+
+.button {
+    height: 38px;
+      border: none;
+      border-radius: 3px;
+      color: #fff;
+      background-color: #333;
+      outline: none;
+      font-size: 0.85em;
+      font-weight: 500;
+      padding: 8px 18px 8px 18px;
+      margin-top: 30px;
+      opacity: 1;
+      cursor: pointer;
+}
+
+.button:hover{
+    opacity: 0.9;
+}
+
+.share-quote{
+    float: left;
+    padding: 0px;
+    padding-top: 6px;
+    padding-bottom: 2px;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 5px;
+    height: 30px;
+    width: 40px;
+}
+
+#new-quote {
+    float: right;
+}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
