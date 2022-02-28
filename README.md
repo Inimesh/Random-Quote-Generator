@@ -16,6 +16,13 @@ A simple web app that displays a random quote with the ability to share on twitt
 - React
 
 ## Usage
+
+To run on localhost, simply run the server (e.g. npm)
+
+```
+npm run start
+```
+
 To run on localhost, simply run the server (e.g. npm)
 
 ```
